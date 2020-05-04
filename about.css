@@ -9,7 +9,6 @@
 body {
   background-color: rgb(209, 226, 226);
   font-family: 'Barlow';
-  overflow: hidden;
 }
 
 #navigation_bar {
@@ -17,7 +16,21 @@ body {
   margin-top: 15px;
 }
 
-#intro {
+#landing {
+  font-family: "Lora";
+  font-size: 24px;
+  padding-right: 15%;
+  padding-left: 10%;
+  padding-bottom: 30px;
+}
+
+#values {
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 140px;
+}
+
+#summary {
   font-size: 28px;
   padding-left: 20%;
   padding-right: 20%;
@@ -32,4 +45,10 @@ body {
   margin-left: 15%;
   margin-right: 20%;
   border-radius: 8px;
+}
+
+.title {
+  font-family: 'Merriweather', serif;
+  font-size: 130px; 
+  font-weight: bold;
 }
