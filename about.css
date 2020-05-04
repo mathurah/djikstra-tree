@@ -1,0 +1,13 @@
+@font-face { font-family: 'Barlow'; 
+  font-style: normal; 
+  font-weight: 300; font-display: swap; 
+  src: local('Barlow Light'), 
+    local('Barlow-Light'), 
+    url(https://fonts.gstatic.com/s/barlow/v4/7cHqv4kjgoGqM7E3p-ks6Vop.ttf) format('truetype');
+}
+
+body {
+  background-color: #EEF3F3;
+  font-family: 'Barlow';
+  overflow: hidden;
+}
