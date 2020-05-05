@@ -7,22 +7,38 @@
 </head>
 <body>
 
-  <nav id = "navigation_bar">
-    <ul>
-      <li><a href = "#landing">About</li>
-      <li><a href = "#values">Values</a></li>
-      <li><a href = "#summary">Sign Up</a></li>
-    </ul>
-  </nav>
+  <div id = "nav_bar">
+    <nav id = "navigation_bar">
+      <ul>
+        <li><a href = "#landing" style="text-decoration: none;"><b>About</b></li>
+        <li><a href = "#values" style="text-decoration: none;"><b>Values</b></a></li>
+        <li><a href = "#summary" style="text-decoration: none;"><b>Sign Up</b></a></li>
+      </ul>
+    </nav>
+  </div>
 
   <div id = "landing">
     <img src = "lightbulb.png"></img>
-    <p class="title">dijkstra's <br>
+
+    <p class="title">dijkstra's <br>  <!-- Show this when media query indicates the width of the device is sufficient -->
       tree</p>
+    <p class ="mobile_title">dijkstra's tree</p> <!-- Show this when media query indicates width is below certain number-->
+
+    <!-- Show these when media query indicates the width of the device is sufficient -->
     <span>dijkstra’s tree: (noun) getting you from one place to another,</span> 
-    <br>
+      <br>
     <span style="top: 486px; width: 154px;">as fast as possible.</span>
+
     <p class = "call_to_action">join our fun community of founders, tinkerers, and <br>creators to work on projects with impact. </p>
+
+    <!-- Show these when media query indicates width is below certain number-->
+    <div style = "position: absolute; top: 0; width: 100%; display: flex; justify-content: center;">
+      <mobile_span>dijkstra’s tree: (noun) getting you from one place to another,</mobile_span> 
+      <br>
+      <mobile_span style="top: 286px; width: 154px;">as fast as possible.</mobile_span>
+    </div>
+
+    <p class = "mobile_call_to_action">join our fun community of founders, tinkerers, and <br>creators to work on projects with impact. </p>
   </div>
 
   <div id = "values">
