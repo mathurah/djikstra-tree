@@ -2,22 +2,28 @@
 <html lang="en">
   
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
   <link href="about.css" rel="stylesheet" type="text/css"/>
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap" rel="stylesheet">
+  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
 
-  <div id = "nav_bar">
-    <nav id = "navigation_bar">
-      <ul>
-        <li><a href = "#landing" style="text-decoration: none;"><b>About</b></li>
-        <li><a href = "#values" style="text-decoration: none;"><b>Values</b></a></li>
-        <li><a href = "#summary" style="text-decoration: none;"><b>Sign Up</b></a></li>
-      </ul>
-    </nav>
-  </div>
+  <nav class = "navigation_bar">
+    <span class="navigation_bar_toggle" id="js-navigation_bar_toggle">
+      <i class="fa fa-bars"></i>
+    </span>
+
+    <ul class = "main_nav" id = "js_menu">
+      <li><a href = "#landing" class = "nav_links" style="text-decoration: none;"><b>About</b></li>
+      <li><a href = "#values" class = "nav_links" style="text-decoration: none;"><b>Values</b></a></li>
+      <li><a href = "#summary" class = "nav_links" style="text-decoration: none;"><b>Signup</b></a></li>
+    </ul>
+  </nav>
 
   <div id = "landing">
 
@@ -29,11 +35,9 @@
 
     <p class="landing_description">
       <a>dijistra’s tree: (noun) getting you from one place to</a> 
-        <br></br>
       <a>another, as fast as possible. </a>
-        <br></br> <br></br>
-      join our fun community of founders, tinkerers,
         <br></br>
+      join our fun community of founders, tinkerers,
         and creators to work on projects with impact.
     </p>
 
@@ -70,18 +74,14 @@
   </div>
 
   <div id = "summary">
-
-    <p class = "summary_description">Dijkstra's Tree: a community where people come to share opportunities and to work on projects/startups together —
-    <br>
+    <p class = "summary_description">Dijkstra's Tree: a community where people come to share opportunities and to work on projects/startups together
     — composed of entrepreneurial, driven, and diverse people from across the world. 
     </p>
 
-
     <iframe class="airtable-embed" src="https://airtable.com/embed/shrTTzdRucTl8HBLB?backgroundColor=orange" frameBorder="0" width="60%" height="640"></iframe>
-
   </div>
 
-  <script src = "scroll.js"></script>
+  <script src = "navigation.js"></script>
 
 </body>
 </html>
